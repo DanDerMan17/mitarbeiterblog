@@ -1,0 +1,5 @@
+# Default ignored files
+/node_modules/
+/build/
+# Editor-based HTTP Client requests
+.env

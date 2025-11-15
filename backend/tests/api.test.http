@@ -1,0 +1,28 @@
+##LOGIN TEACHER
+# @name "Login Teacher1"
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+"username":"Teacher1",
+"password":"password"
+}
+
+
+###LOGIN Student
+# @name "Login Student1"
+POST http://localhost:3001/api/auth/login
+Content-Type: application/json
+
+{
+"username":"Student1",
+"password":"password"
+}
+
+
+###
+### GET Ping
+GET http://localhost:3001/api/auth/ping
+Accept: application/json
+
+###

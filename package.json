@@ -1,0 +1,22 @@
+{
+  "name": "mitarbeiter2_vitest_root",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "be-dev": "cd backend && npm run dev || echo 'Backend starten'",
+    "fe-dev": "cd frontend && npm run dev || echo 'Frontend starten'",
+    "be-test": "cd vitest/backend && npm run test",
+    "fe-test": "cd vitest/frontend && npm run test"
+  },
+  "workspaces": [
+    "backend",
+    "frontend",
+    "./vitest/shared"
+  ],
+  "scripts-info": {
+    "be-dev": "Startet das Backend-API-Projekt (Express)",
+    "fe-dev": "Startet das Frontend (React + Vite)",
+    "be-test": "Führt Vitest-Tests im Backend aus",
+    "fe-test": "Führt Vitest-Tests im Frontend aus"
+  }
+}

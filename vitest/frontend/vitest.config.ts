@@ -1,0 +1,12 @@
+
+import { defineConfig } from 'vitest/config';
+
+export default defineConfig({
+  test: {
+    environment: 'node',
+    globals: true,
+    watch: false,
+    testTimeout: 20000,
+    reporters: ['default'],
+  },
+});
